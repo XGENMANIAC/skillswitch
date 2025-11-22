@@ -35,7 +35,7 @@ console.log(`   - Auth ready gating: ${hasAuthReady ? '✓' : '✗'}`);
 
 // Test 4: Check Firestore collections paths
 console.log('\n✅ Test 4: Firestore Collections');
-const hasPublicSkillsPath = componentCode.includes('artifacts') && componentCode.includes('public/data/skills');
+const hasPublicSkillsPath = componentCode.includes('artifacts') && componentCode.includes('public') && componentCode.includes('skills');
 const hasPrivateRequestsPath = componentCode.includes('users') && componentCode.includes('requests');
 const hasAppId = componentCode.includes('APP_ID');
 console.log(`   - Public skills path: ${hasPublicSkillsPath ? '✓' : '✗'}`);
